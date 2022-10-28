@@ -1,0 +1,117 @@
+.map-wrapper {
+    position: relative;
+    z-index: 10;
+    height: 64rem;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    max-height: 70vh;
+  }
+  .map-wrapper__tabs {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 11;
+    width: 50%;
+    right: 0;
+    top: 0;
+  }
+  .map-wrapper__tab {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    background-color: #181f1b;
+    color: white;
+    height: 3rem;
+    position: relative;
+  }
+  .map-wrapper__tab--active {
+    background-color: #FDA12B;
+  }
+  .map-wrapper__tab--active:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 10px 0 10px;
+    border-color: #FDA12B transparent transparent transparent;
+    bottom: -1.2rem;
+    left: 50%;
+    margin-left: -1rem;
+  }
+  
+  .parking-info-item {
+    margin-bottom: 2.8rem !important;
+  }
+  .parking-info-item svg {
+    margin-left: 0.8rem;
+    transform: translateY(-0.1rem) rotate(-90deg);
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .map--active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media (max-width: 1199.98px) {
+    .page-contact .page-intro {
+      margin-bottom: 0;
+    }
+  
+    .map-wrapper {
+      margin-top: 8rem;
+      padding-top: 0;
+    }
+    .map-wrapper__tabs {
+      width: 100%;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .page-contact .section--top .container-fluid, .page-contact .section--top .container-sm, .page-contact .section--top .container-md, .page-contact .section--top .container-lg, .page-contact .section--top .container-xl {
+      padding-bottom: 0;
+    }
+    .page-contact .lines-work {
+      top: -36rem;
+      left: calc(50% + 28rem);
+      margin-left: -50.2rem;
+    }
+  
+    .contact-stimmt .button {
+      margin-top: 2.4rem;
+    }
+  
+    .map-wrapper {
+      margin-left: -2.4rem;
+      margin-right: -2.4rem;
+      width: auto;
+      height: 80rem;
+    }
+  
+    .stimmt-amsterdam {
+      margin-top: 3.2rem;
+    }
+    
+  }
+
+  .estilosffoter{
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px !important;
+    border-color: rgba(0, 0, 0, 0.175) !important;
+    border-radius: 20px !important;
+  }
